@@ -1,0 +1,73 @@
+<!-- Our GROUP ROCK!! -->
+<!-- Our GROUP ROCK!! -->
+<!-- Our GROUP ROCK!! -->
+<!-- Our GROUP ROCK!! -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-">
+    <header class="text- py-6 text-center">
+        <a href="index.html">
+          <h1 class="text-3xl font-bold">Ultimate Unit Converter</h1>
+          <h1 class="text-7xl my-4">😊</h1>
+        </a>
+      </header>
+    <nav class="flex flex-row justify-center p-4 bg-blue-500">
+      <a
+        href="weight.html"
+        class="px-16 font-bold hover:text-white hover:cursor-pointer"
+        >Weight Converter</a
+      >
+      <a
+        href="distance.html"
+        class="px-16 font-bold hover:text-white hover:cursor-pointer"
+        >Distance Converter</a
+      >
+      <a
+        href="temperature.html"
+        class="px-16 font-bold hover:text-white hover:cursor-pointer"
+        >Temperature Converter</a
+      >
+    </nav>
+    <main class="m-4 mx-auto flex max-w-4xl justify-around py-8">
+      <div class="m-3 mb-6 rounded-lg bg-white p-6 shadow-md">
+        <h2 class="mb-4 text-xl font-semibold">Pounds to Kilograms</h2>
+        <div class="m-3 flex space-x-4">
+          <input
+            id="userInputedPounds"
+            type="number"
+            placeholder="Pounds"
+            class="w-full rounded border p-2"
+          />
+          <input
+            id="userInputedKilograms"
+            type="number"
+            placeholder="Kilograms"
+            class="w-full rounded border p-2"
+          />
+        </div>
+
+        <div class="flex justify-center">
+          <button
+            id="convertButtonKP"
+            class="w-40 m-5 rounded bg-blue-500 px-3 py-3 text-white transition hover:bg-green-500"
+          >
+            Convert
+          </button>
+          <button
+            id="resetValues"
+            class="w-40 m-5 rounded bg-red-500 px-3 py-3 text-white transition hover:bg-green-500"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="weight.js"></script>
+</html>
