@@ -15,6 +15,7 @@ document.getElementById("convertButtonKP").addEventListener("click", () => {
     }
 });
 
+
 // Miles to Kilometers
 document.getElementById("convertButtonMK").addEventListener("click", () => {
   const milesInput = document.getElementById("userInputedMiles");
@@ -31,4 +32,24 @@ document.getElementById("convertButtonMK").addEventListener("click", () => {
     alert("Please enter a value to convert.");
   }
 });
+
+
+document.getElementById("convertButtonCF").addEventListener("click", () => {
+    const celciusValue = document.getElementById("celciusText").value;
+    const fahrenheitValue = document.getElementById("fahrenheitText").value;
+  
+    if (celciusValue !== "" && fahrenheitValue === "") {
+      // Convert Celsius to Fahrenheit
+      const celcius = parseFloat(celciusValue);
+      const fahrenheit = (celcius * 1.8) + 32;
+      document.getElementById("fahrenheitText").value = fahrenheit.toFixed(2);
+    } else if (fahrenheitValue !== "" && celciusValue === "") {
+      // Convert Fahrenheit to Celsius
+      const fahrenheit = parseFloat(fahrenheitValue);
+      const celcius = (fahrenheit - 32) / 1.8;
+      document.getElementById("celciusText").value = celcius.toFixed(2);
+    } else {
+      alert("Please enter a value to convert in one of the fields.");
+    }
+  });
 
