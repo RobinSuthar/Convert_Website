@@ -1,8 +1,8 @@
 <!-- Our GROUP ROCK!! -->
 <!-- Our GROUP ROCK!! -->
 <!-- Our GROUP ROCK!! -->
- <!-- Our GROUP ROCK!! -->
-<!doctype html>
+<!-- Our GROUP ROCK!! -->
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,12 +11,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-">
-    <header class="bg-blue- text- py-6 text-center">
-      <h1 class="text-3xl font-bold">Unit Conversion</h1>
-      <h1 class="text-7xl mt-14">😊</h1>
+    <header class="text- py-6 text-center">
+      <a href="index.html">
+        <h1 class="text-3xl font-bold">Ultimate Unit Converter</h1>
+        <h1 class="text-7xl my-4">😊</h1>
+      </a>
     </header>
-
+    <nav class="flex flex-row justify-center p-4 bg-blue-500">
+      <a
+        href="weight.html"
+        class="px-16 font-bold hover:text-white hover:cursor-pointer"
+        >Weight Converter</a
+      >
+      <a
+        href="distance.html"
+        class="px-16 font-bold hover:text-white hover:cursor-pointer"
+        >Distance Converter</a
+      >
+      <a
+        href="temperature.html"
+        class="px-16 font-bold hover:text-white hover:cursor-pointer"
+        >Temperature Converter</a
+      >
+    </nav>
     <main class="m-4 mx-auto flex max-w-4xl justify-around py-8">
+
+      <div class="flex justify-center rounded p-20 font-bold bg-blue-100">
+        Welcome to the Ultimate Unit Converter! Please select a category from the navigation bar above.
+
         
       <div class="m-3 mb-6 rounded-lg bg-white p-6 shadow-md">
         <h2 class="mb-4 text-xl font-semibold">Pounds to Kilograms</h2>
@@ -49,6 +71,7 @@
         <div class="text-center">
           <button id="convertButtonCF" class="m-5 rounded bg-blue-500 px-3 py-3 text-white transition hover:bg-green-500">Convert</button>
         </div>
+
       </div>
     </main>
   </body>
