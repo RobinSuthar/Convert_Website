@@ -35,8 +35,43 @@
       >
     </nav>
     <main class="m-4 mx-auto flex max-w-4xl justify-around py-8">
+
       <div class="flex justify-center rounded p-20 font-bold bg-blue-100">
         Welcome to the Ultimate Unit Converter! Please select a category from the navigation bar above.
+
+        
+      <div class="m-3 mb-6 rounded-lg bg-white p-6 shadow-md">
+        <h2 class="mb-4 text-xl font-semibold">Pounds to Kilograms</h2>
+        <div class="m-3 flex space-x-4">
+          <input id="userInputedPounds" type="number" placeholder="Pounds" class="w-full rounded border p-2" />
+          <input id="userInputedKilograms" type="number" placeholder="Kilograms" class="w-full rounded border p-2" />
+        </div>
+        <div class="text-center">
+          <button id="convertButtonKP" class="m-5 rounded bg-blue-500 px-3 py-3 text-white transition hover:bg-green-500">Convert</button>
+        </div>
+      </div>
+
+      <div class="m-3 mb-6 rounded-lg bg-white p-6 shadow-md">
+        <h2 class="mb-4 text-xl font-semibold">Miles to Kilometers</h2>
+        <div class="m-3 flex space-x-4">
+          <input id="userInputedMiles" type="number" placeholder="Miles" class="w-full rounded border p-2" />
+          <input id="userInputedKilometers" type="number" placeholder="Kilometers" class="w-full rounded border p-2" />
+        </div>
+        <div class="text-center">
+          <button id="convertButtonMK" class="m-5 rounded bg-blue-500 px-3 py-3 text-white transition hover:bg-green-500">Convert</button>
+        </div>
+      </div>
+     
+      <div class="m-3 mb-6 rounded-lg bg-white p-6 shadow-md">
+        <h2 class="mb-4 text-xl font-semibold">Celsius to Fahrenheit</h2>
+        <div class="m-3 flex space-x-4">
+          <input id="celciusText" type="number" placeholder="Celsius" class="w-full rounded border p-2" />
+          <input id="fahrenheitText" type="number" placeholder="Fahrenheit" class="w-full rounded border p-2" />
+        </div>
+        <div class="text-center">
+          <button id="convertButtonCF" class="m-5 rounded bg-blue-500 px-3 py-3 text-white transition hover:bg-green-500">Convert</button>
+        </div>
+
       </div>
     </main>
   </body>
