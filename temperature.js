@@ -1,6 +1,5 @@
-//work in progress
 document.getElementById("convertButtonCF").addEventListener("click", () => {
-    const celciusValue = document.getElementById("celciusText").value;
+    const celciusValue = document.getElementById("celciusText").value.trim();
     const fahrenheitValue = document.getElementById("fahrenheitText").value;
   
     if (celciusValue !== "") {
